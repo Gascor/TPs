@@ -1,5 +1,5 @@
 public class Reservation implements Comparable <Reservation> {
-    private DateCalendrier chDate;
+    private Date chDate;
     private PlageHoraire chPH;
     private String chTitre;
 
@@ -10,7 +10,7 @@ public class Reservation implements Comparable <Reservation> {
      * @param parPH Plage horaire de la réservation.
      * @param parTitre Nom de la réservation.
      */
-    public Reservation(DateCalendrier parDate, PlageHoraire parPH, String parTitre) throws ReservationException {
+    public Reservation(Date parDate, PlageHoraire parPH, String parTitre) throws ReservationException {
         chDate = parDate;
         chPH = parPH;
         chTitre = parTitre;
@@ -51,7 +51,7 @@ public class Reservation implements Comparable <Reservation> {
         return chDate.estValide() && chPH.estValide();
     }
 
-    public DateCalendrier getDate() {
+    public Date getDate() {
         return chDate;
     }
 }

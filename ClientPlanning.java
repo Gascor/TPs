@@ -7,9 +7,9 @@ public class ClientPlanning {
 
     public static void main(String [] args){
         Planning test = new Planning();
-        DateCalendrier testDate = new DateCalendrier(8,6,2019);
+        Date testDate = new Date(8,6,2019);
         try{
-            test.ajout(new Reservation(new DateCalendrier(5,12,2023),
+            test.ajout(new Reservation(new Date(5,12,2023),
                     new PlageHoraire(new Horaire(5,30),
                             new Horaire(7,15)),
                     "Film Mario"));
@@ -24,7 +24,7 @@ public class ClientPlanning {
                 int horraire2 = Integer.parseInt(scanner.next());
                 int quartheure2 = Integer.parseInt(scanner.next());
 
-                new Reservation(new DateCalendrier(Jour,Mois,Annee),new PlageHoraire(new Horaire(horraire1,quartheure1),new Horaire(horraire2,quartheure2)),intitule);
+                new Reservation(new Date(Jour,Mois,Annee),new PlageHoraire(new Horaire(horraire1,quartheure1),new Horaire(horraire2,quartheure2)),intitule);
             }
         }
         catch (PlanningException parExc){

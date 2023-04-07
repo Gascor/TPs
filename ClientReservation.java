@@ -3,12 +3,12 @@ import java.util.Arrays;
 public class ClientReservation {
 
     public static void main(String [] args) {
-        /*try{
-        Reservation test1 = new Reservation(new DateCalendrier(-1, 3, 2023),
+        try{
+        Reservation test1 = new Reservation(new Date(-1, 3, 2023),
                 new PlageHoraire(new Horaire(8, 30),
                         new Horaire(11, 15)),
                 "Hôtel Ibis");
-        Reservation test2 = new Reservation(new DateCalendrier(-29, -3, 2018),
+        Reservation test2 = new Reservation(new Date(-29, -3, 2018),
                 new PlageHoraire(new Horaire(5, 15),
                         new Horaire(7, 30)),
                 "Dire bonjour");
@@ -37,8 +37,6 @@ public class ClientReservation {
             System.err.print(parExc.getCodeErreur());
             System.exit(-1);
         }
-
-         */
     }
 }
 // MAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA NICOLEEEETAAAAAAAAA
